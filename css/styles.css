@@ -57,12 +57,26 @@ ol {
   padding-left: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .list {
   list-style: none;
 }
 
 .link {
   text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ======= START COMPONENTES ======= */
@@ -86,6 +100,7 @@ ol {
 .hero-banner,
 .footer {
   background: var(--footer-background-color);
+  overflow: visible;
 }
 
 .title {
@@ -99,6 +114,26 @@ ol {
 /* ======= END COMPONENTES ======= */
 
 /* ======= START HEADER STYLES ======= */
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  margin-left: 94px;
+}
+
+.nav-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav-list-link {
   font-weight: 500;
   line-height: 1.14;
@@ -112,16 +147,39 @@ ol {
   color: var(--primary-accent-color);
 }
 
+.header .contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+
 .contacts-link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
+
+.nav-list-link,
+.header .contacts-link {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header .phone {
+  margin-left: 50px;
+}
 /* ======= END HEADER STYLES ======= */
 
 /* ======= START HERO STYLES ======= */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .main-title {
+  margin-top: 200px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -132,17 +190,18 @@ ol {
 }
 
 .modal-btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--contrast-accent-color);
   background: var(--primary-accent-color);
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-width: 0px;
   cursor: pointer;
