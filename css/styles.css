@@ -99,8 +99,8 @@ img {
   color: var(--contrast-accent-color);
 }
 
-.hero-banner,
-.footer {
+.hero-container,
+.footer-container {
   background: var(--footer-background-color);
 }
 
