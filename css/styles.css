@@ -101,8 +101,8 @@ img {
 
 .hero-banner,
 .footer {
-  background-color: var(--footer-background-color);
   min-width: 1200px;
+  background-color: var(--footer-background-color);
 }
 
 .title {
@@ -118,6 +118,7 @@ img {
 
 /* ======= START HEADER STYLES ======= */
 .header {
+  min-width: 1200px;
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid var(--section-border-color);
