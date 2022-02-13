@@ -102,6 +102,7 @@ img {
 .hero-banner,
 .footer {
   background-color: var(--footer-background-color);
+  min-width: 1200px;
 }
 
 .title {
@@ -264,7 +265,6 @@ img {
 
 .team {
   background-color: var(--secondary-background-color);
-  background-size: cover;
   min-width: 1200px;
 }
 
