@@ -104,6 +104,7 @@ img {
 }
 
 .title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -190,6 +191,8 @@ img {
 }
 
 .modal-btn {
+  min-width: 136px;
+  padding: 10px 32px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 200px;
@@ -203,7 +206,7 @@ img {
   background: var(--primary-accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border-width: 0px;
+  border-width: 0;
   cursor: pointer;
 }
 
@@ -212,7 +215,24 @@ img {
   background: var(--secondary-accent-color);
 }
 
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 94px;
+  /* padding-bottom: 94px; */
+  /* margin-bottom: 94px; */
+}
+
+.features-list-item {
+  width: 270px;
+}
+
+.features-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .features-title {
+  margin-bottom: 10px;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -222,6 +242,7 @@ img {
 }
 
 .features-description {
+  height: 75px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -229,19 +250,47 @@ img {
 /* ======= END HERO STYLES ======= */
 
 /* ======= START WHAT WE DO ======= */
+.activities-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.activities-list {
+  display: flex;
+  justify-content: space-between;
+}
 /* ======= END WHAT WE DO ======= */
 
 /* ======= START OUR TEAM ======= */
+
 .team {
   background: var(--secondary-background-color);
+}
+
+.team-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .team-member-card {
   width: 270px;
   background: var(--primary-background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-member-description {
+  padding: 30px 10px;
 }
 
 .team-member-name {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -259,8 +308,29 @@ img {
 /* ======= END OUR TEAM ======= */
 
 /* ======= START FOOTER ======= */
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* .footer .contacts {
+  margin-top: 20px;
+} */
+
 .contacts {
+  /* width: 230px; */
+  margin-top: 20px;
+  margin-bottom: 0;
   font-style: inherit;
+}
+
+.contacts .contacts-list {
+  width: 230px;
+  max-height: 82px;
+}
+
+.contacts-list-item:not(:last-child) {
+  margin-bottom: 8px;
 }
 
 .contacts .link {
