@@ -102,7 +102,6 @@ img {
 .hero-banner,
 .footer {
   background: var(--footer-background-color);
-  overflow: visible;
 }
 
 .title {
