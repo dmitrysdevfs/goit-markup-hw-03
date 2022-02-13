@@ -101,7 +101,7 @@ img {
 
 .hero-banner,
 .footer {
-  background: var(--footer-background-color);
+  background-color: var(--footer-background-color);
 }
 
 .title {
@@ -171,9 +171,15 @@ img {
 .header .phone {
   margin-left: 50px;
 }
+
 /* ======= END HEADER STYLES ======= */
 
 /* ======= START HERO STYLES ======= */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .hero-container {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -203,7 +209,7 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--contrast-accent-color);
-  background: var(--primary-accent-color);
+  background-color: var(--primary-accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-width: 0;
@@ -212,15 +218,13 @@ img {
 
 .modal-btn:hover,
 .modal-btn:focus {
-  background: var(--secondary-accent-color);
+  background-color: var(--secondary-accent-color);
 }
 
 .features-list {
   display: flex;
   justify-content: space-between;
   padding-top: 94px;
-  /* padding-bottom: 94px; */
-  /* margin-bottom: 94px; */
 }
 
 .features-list-item {
@@ -250,10 +254,6 @@ img {
 /* ======= END HERO STYLES ======= */
 
 /* ======= START WHAT WE DO ======= */
-.activities-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .activities-list {
   display: flex;
   justify-content: space-between;
@@ -263,12 +263,9 @@ img {
 /* ======= START OUR TEAM ======= */
 
 .team {
-  background: var(--secondary-background-color);
-}
-
-.team-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  background-color: var(--secondary-background-color);
+  background-size: cover;
+  min-width: 1200px;
 }
 
 .team-list {
@@ -295,7 +292,7 @@ img {
 
 .team-member-card {
   /* width: 270px; */
-  background: var(--primary-background-color);
+  background-color: var(--primary-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -368,11 +365,6 @@ img {
 /* =======END FOOTER======= */
 
 /* ======= START PORTFOLIO ======= */
-.portfolio-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .filters-list {
   display: flex;
   justify-content: center;
@@ -394,7 +386,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  background: var(--secondary-background-color);
+  background-color: var(--secondary-background-color);
   border-radius: 4px;
   border-width: 0px;
   cursor: pointer;
@@ -403,7 +395,7 @@ img {
 .filters-btn:hover,
 .filters-btn:focus {
   color: var(--contrast-accent-color);
-  background: var(--primary-accent-color);
+  background-color: var(--primary-accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
